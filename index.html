@@ -5,16 +5,141 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
 
-   <span>Lesson 1</span>
-   <span>Урок 1</span>
+    </header>
 
-   <div>Lesson 3</div>
-   <div>Lesson 4</div>
-   <img src="./img/stock-photo-141092249-1500x1000.jpg" alt="Ledy" width="200px">
-   <br>
-   <img src="https://media.istockphoto.com/photos/superhero-businessman-standing-on-globe-picture-id479408066?k=20&m=479408066&s=612x612&w=0&h=bEjb-zQKqXYLRqVJhSSeuVTv0eYKQUxgjWSCZYIkfoM=" alt="Text about picture">
+    <main>
+        
+        <video src="http://techslides.com/demos/sample-videos/small.webm"
+            poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640" width="640" controls autoplay loop
+            preload="auto">
+        </video>
+
+        <br>
+
+        <!--Пример когда нужно загрузить видео в нескольких форматах, для всех браузеров-->
+        <video poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640" width="640" controls autoplay loop
+            preload="auto">
+            <source src="http://techslides.com/demos/sample-videos/small.webm" type="video/webm" />
+            <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4" />
+            <source src="http://techslides.com/demos/sample-videos/small.ogv" type="video/ogg" />
+        </video>
+
+        <address><!--Тег предназначен для хранения контактной информации, семантичен-->
+            Kiev 32 <br>
+            Email: <a href="mailto:mango@bongo.com">mango@bongo.com</a> <br>
+            Tel: <a href="tel:+475956325">+(475) 95-63-25</a>
+        </address>
+        
+        <p>
+            Last valid train in <time datetime="2020-12-01T12:20">first december</time><!--Атрибут тега тайм нужен для ассистивных технологий-->
+        </p>
+
+        <p>
+            Lorem ipsum dolor<sub>2</sub> sit<sup>3</sup> amet.
+        </p>
+
+        <!--Пример преформатированного текста где переносы строк не игнорируются (стих, песня)-->
+        <pre>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tempora iusto porro in placeat fugit!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora blanditiis alias inventore!
+        </pre>
+
+        <!--Пример контейнера дл (дескрипшн лист) для термина дт и описания дд-->
+        <dl>
+            <dt>Fogot</dt>
+            <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, modi!</dd>
+
+            <dt>Rem</dt>
+            <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat eos consequatur blanditiis, quia commodi temporibus.</dd>
+
+            <dt>Orto</dt>
+            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nulla quibusdam ducimus?</dd>
+        </dl>
+
+        <!-- Пример написания таблицы -->
+        <!-- <h3>Train schedule</h3> -->
+        <table>
+            <caption>Train schedule</caption>
+            <thead><!--Семантический тег шапки таблицы-->
+                <tr>
+                    <th><b>Train namber</b></th>
+                    <th><b>Root</b></th>
+                    <th><b>Time</b></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>521</td>
+                    <td>Kiev-Odessa</td>
+                    <td>5 hours</td>
+                </tr>
+                <tr>
+                    <td>435</td>
+                    <td>Kiev-Kharkiv</td>
+                    <td>6 hours</td>
+                </tr>
+                <tr>
+                    <td>365</td>
+                    <td>Kiev-Odessa</td>
+                    <td>1 hours</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Cloud service</th>
+                    <th colspan="3">Statistics</th>
+                    <!-- <th></th> -->
+                    <!-- <th></th> -->
+                </tr>
+                <tr>
+                    <!-- <th></th> -->
+                    <th>Users</th>
+                    <th>Visits</th>
+                    <th>Volume</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>Google</th>
+                    <td>12000</td>
+                    <td>307000</td>
+                    <td>1000 Tb</td>
+                </tr>
+                <tr>
+                    <th>Amazon</th>
+                    <td>9000</td>
+                    <td>200500</td>
+                    <td>800 Tb</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <span>Lesson 1</span>
+        <span>Урок 1</span>
+
+        <div>Lesson 3</div>
+        <div>Lesson 4</div>
+        <img src="./img/stock-photo-141092249-1500x1000.jpg" alt="Ledy" width="200px">
+        <br>
+        <img src="https://media.istockphoto.com/photos/superhero-businessman-standing-on-globe-picture-id479408066?k=20&m=479408066&s=612x612&w=0&h=bEjb-zQKqXYLRqVJhSSeuVTv0eYKQUxgjWSCZYIkfoM=" alt="Text about picture" width="200">
+    </main>
+
+   <footer>
+
+   </footer>
 </body>
 </html>
